@@ -18,7 +18,7 @@ body {
     margin-bottom: 20px;
 }
 
-.timer-controls button {
+ button {
     font-size: 1rem;
     padding: 10px 20px;
     margin: 0 5px;
@@ -30,6 +30,6 @@ body {
     transition: background-color 0.3s;
 }
 
-.timer-controls button:hover {
+ button:hover {
     background-color: #0056b3;
 }
