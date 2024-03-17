@@ -1,33 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Delius&family=Delius+Swash+Caps&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Madimi+One&family=Noto+Serif+Ottoman+Siyaq&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #FF8E8F;
 }
 
+h1 {
+    font-family: 'Qwitcher Grypen', sans-serif;
+    font-size: 3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.4rem;
+    color: #6420AA;
+}
 .timer-container {
     max-width: 400px;
     margin: 50px auto;
-    background-color: #9cf8c8;
+    background-color: #F9E897;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 12px 10px 3px rgba(0, 0, 0, 0.1);
+
 }
 
 .timer-display {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    font-family: 'Dela Gothic One', sans-serif;
 }
 
  button {
     font-size: 1rem;
     padding: 10px 20px;
-    margin: 1rem 0.5rem 1rem 0.3rem;
+    margin: 0.7rem 0.5rem 0.7rem 0.3rem;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     background-color: #007bff;
     color: #fff;
     transition: background-color 0.3s;
+    font-family: 'Delius', sans-serif;
 }
 
  button:hover {
@@ -38,8 +50,31 @@ input{
     margin: 7px;
     padding: 22px;
     border-radius: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
 }
 
 input[type="radio"], label{
     cursor: pointer;
+}
+.interval-options {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.2rem;
+}
+p{
+    display: flex;
+    justify-content: end;
+    margin-top: -82px;
+    font-family: 'Madimi One', sans-serif;
+    font-size: 1.2rem;
+}
+
+.author{
+    font-family: 'Delius Swash Caps', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #201658;
+    text-decoration: underline wavy #59D5E0 0.2rem;
+    margin: -2px;
 }
