@@ -7,7 +7,7 @@ body {
 .timer-container {
     max-width: 400px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: #9cf8c8;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -21,7 +21,7 @@ body {
  button {
     font-size: 1rem;
     padding: 10px 20px;
-    margin: 0 5px;
+    margin: 1rem 0.5rem 1rem 0.3rem;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -32,4 +32,14 @@ body {
 
  button:hover {
     background-color: #0056b3;
+}
+
+input{
+    margin: 7px;
+    padding: 22px;
+    border-radius: 1rem;
+}
+
+input[type="radio"], label{
+    cursor: pointer;
 }

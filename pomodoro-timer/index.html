@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -18,6 +18,11 @@
         <input type="radio" id="interval-50" name="interval" value="50">
         <label for="interval-50">50 minutes</label>
       </div>
+      <div class="custom-time">
+        <input type="number" id="custom-minutes" placeholder="Minutes">
+        <input type="number" id="custom-seconds" placeholder="Seconds">
+        <button id="set-custom-time-btn">Set Custom Time</button>
+    </div>    
       <div class="timer-controls"></div>
             <button id="start-btn" >Start</button>
             <button id="pause-btn" >Pause</button>
