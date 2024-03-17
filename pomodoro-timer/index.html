@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro Timer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="timer-container">
@@ -13,22 +13,33 @@
         <span id="timer-minutes">25</span>:<span id="timer-seconds">00</span>
       </div>
       <div class="interval-options">
-        <input type="radio" id="interval-25" name="interval" value="25" checked>
+        <input
+          type="radio"
+          id="interval-25"
+          name="interval"
+          value="25"
+          checked
+        />
         <label for="interval-25">25 minutes</label>
-        <input type="radio" id="interval-50" name="interval" value="50">
+        <input type="radio" id="interval-50" name="interval" value="50" />
         <label for="interval-50">50 minutes</label>
       </div>
       <div class="custom-time">
-        <input type="number" id="custom-minutes" placeholder="Minutes">
-        <input type="number" id="custom-seconds" placeholder="Seconds">
+        <input type="number" id="custom-minutes" placeholder="Minutes" />
+        <input type="number" id="custom-seconds" placeholder="Seconds" />
         <button id="set-custom-time-btn">Set Custom Time</button>
-    </div>    
+      </div>
       <div class="timer-controls"></div>
-            <button id="start-btn" >Start</button>
-            <button id="pause-btn" >Pause</button>
-            <button id="reset-btn" >Reset</button>
-          </div>
-          <p>Made by &nbsp;&nbsp; <span class="author"> Pankaj Chourasia </span></p>
+      <button id="start-btn">Start</button>
+      <button id="pause-btn">Pause</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+    <audio
+      id="alarm-sound"
+      src="assets/alarm-sound.mp3"
+      preload="auto"
+    ></audio>
+    <p>Made by &nbsp;&nbsp; <span class="author"> Pankaj Chourasia </span></p>
     <script src="script.js"></script>
   </body>
 </html>

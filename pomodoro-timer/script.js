@@ -15,6 +15,7 @@ const interval50Radio = document.getElementById('interval-50');
 const customMinutesInput = document.getElementById('custom-minutes');
 const customSecondsInput = document.getElementById('custom-seconds');
 const setCustomTimeBtn = document.getElementById('set-custom-time-btn');
+const alarmSound = document.getElementById('alarm-sound');
 
 
 //function to start the timer
@@ -76,6 +77,7 @@ function updateTimer() {
         if (minutes === 0) {
             // Timer has reached 0, stop the timer
             pauseTimer();
+            alarmSound.play();
             alert('Pomodoro session completed!');
             return;
         }
