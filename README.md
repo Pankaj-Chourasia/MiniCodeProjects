@@ -44,9 +44,4 @@ To use the Pomodoro Timer, open the `index.html` file in your web browser. Choos
 3. Open the `index.html` file in your preferred web browser.
 4. Start using the application!
 
-## Contributing
-Contributions are welcome! If you have any suggestions, bug fixes, or new features to add, feel free to open an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
