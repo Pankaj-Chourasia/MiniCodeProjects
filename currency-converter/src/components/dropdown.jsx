@@ -9,6 +9,9 @@ const CurrencyDropdown = ({
     handleFavoriteCurrencies,
     title = "",
 }) => {
+   
+  const isFavoriteCurrencies = (curr) => favoriteCurrencies.includes(curr);
+
   return (
     <div>
         <label 
@@ -18,9 +21,17 @@ const CurrencyDropdown = ({
             </label>
     <div className='mt-1 relative'>
         <select value={currentCurrencies} onChange = {(e)=>setCurrencies(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-200">
-          {/* render favoriteCurrencies */}
+          {favoriteCurrencies.map((currentCurrencies)=>{
+            return (
+              <option className='bg-gray-300' value={currentCurrencies} key={currentCurrencies}>
+              {currentCurrencies}
+            </option>
+            );
+          })}
           <hr />
-          {allCurrencies.map((currentCurrencies) => {
+        {allCurrencies
+          .filter((c)=> !favoriteCurrencies.includes(c))
+          .map((currentCurrencies) => {
             return (
               <option value={currentCurrencies} key={currentCurrencies}>
               {currentCurrencies}
@@ -32,7 +43,8 @@ const CurrencyDropdown = ({
         <button 
         onClick={()=>handleFavoriteCurrencies(currentCurrencies)}
         className="absolute inset-y-0 right-0 pr-5 flex items-center text-sm leading-5">
-          <HiOutlineStar />
+
+          {isFavoriteCurrencies(currentCurrencies) ? <HiStar/> : <HiOutlineStar/>}
         </button>
     </div>
     </div>
