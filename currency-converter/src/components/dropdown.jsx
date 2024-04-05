@@ -29,17 +29,14 @@ const CurrencyDropdown = ({
             );
           })}
           <hr />
-        {allCurrencies
-          .filter((c)=> !favoriteCurrencies.includes(c))
-          .map((currentCurrencies) => {
-            return (
-              <option value={currentCurrencies} key={currentCurrencies}>
-              {currentCurrencies}
-            </option>
-            );
-          })}
+      {Array.from(new Set(allCurrencies.filter(c => !favoriteCurrencies.includes(c)))).map(currentCurrency => {
+           return (
+           <option value={currentCurrency} key={currentCurrency}>
+             {currentCurrency}
+           </option>
+            );  
+      })}
         </select>
-
         <button 
         onClick={()=>handleFavoriteCurrencies(currentCurrencies)}
         className="absolute inset-y-0 right-0 pr-5 flex items-center text-sm leading-5">

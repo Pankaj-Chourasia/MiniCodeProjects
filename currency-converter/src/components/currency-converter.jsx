@@ -120,6 +120,9 @@ const CurrencyConverter = () => {
             Converted Amount: {convertedAmount}
         </div>
         )}
+        <div className='flex justify-end mt-5 font-thin text-lg text-orange-500 text-sm'>
+            Made by <span className='italic pl-1 font-medium underline underline-offset-4 text-red-500 decoration-green-500'>Pankaj Chourasia</span>
+        </div>
     </div>
   )
 }
