@@ -11,6 +11,7 @@ public class Tasks {
         this.priority = priority;
         this.dueDate = dueDate;
         this.status = false;
+
     }
 
     public void setTitle(String title) {
